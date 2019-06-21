@@ -10,6 +10,7 @@ import com.aneurinc.sportsplayer.features.login.LoginActivity
 import com.aneurinc.sportsplayer.features.athletes.AthleteDetailsActivity
 import com.aneurinc.sportsplayer.features.athletes.AthleteView
 import com.aneurinc.sportsplayer.features.athletes.AthletesActivity
+import com.aneurinc.sportsplayer.features.athletes.AthleteVideoPlayerActivity
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -36,7 +37,8 @@ class Navigator @Inject constructor(private val authenticator: Authenticator) {
     }
 
     fun showVideoPlayer(activity: FragmentActivity, videoUrl: String) {
-
+        val intent = AthleteVideoPlayerActivity.callingIntent(activity, videoUrl)
+        activity.startActivity(intent)
     }
 
     class Extras(val transitionSharedElement: View)
