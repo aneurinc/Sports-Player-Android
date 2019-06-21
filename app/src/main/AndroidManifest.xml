@@ -31,6 +31,17 @@
         </activity>
 
         <activity
+                android:name="com.aneurinc.sportsplayer.features.athletes.AthleteDetailsActivity"
+                android:label="@string/athletes_screen_title"
+                android:theme="@style/AppTheme.Translucent">
+        </activity>
+
+        <activity
+                android:name="com.aneurinc.sportsplayer.features.athletes.AthleteVideoPlayerActivity"
+                android:configChanges="orientation|screenSize">
+        </activity>
+
+        <activity
                 android:name="com.aneurinc.sportsplayer.features.login.LoginActivity"
                 android:label="@string/login_screen_title">
         </activity>
