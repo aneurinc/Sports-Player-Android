@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Sports Player</string>
+    <string name="athlete_transition_picture">athletePictureTransition</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="failure_network_connection">No Network Connection.</string>
+    <string name="failure_server_error">Server Error</string>
+    <string name="failure_athletes_list_unavailable">Athletes Unavailable.</string>
+    <string name="failure_movie_non_existent">Athlete Not Existent.</string>
+    <string name="athletes_screen_title">Athletes</string>
+    <string name="athletes_details_screen_title">Athlete Details</string>
+    <string name="login_screen_title">Login</string>
+    <string name="video_screen_title">Video Player</string>
+    <string name="athlete_details_dob">Date of Birth</string>
+    <string name="athlete_details_occupation">Occupation</string>
+    <string name="athlete_details_height">Height</string>
+    <string name="athlete_details_hometown">Hometown</string>
+    <string name="athlete_details_bio">About</string>
 </resources>
