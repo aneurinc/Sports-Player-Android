@@ -50,7 +50,7 @@ class AthleteDetailsFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         if (firstTimeCreated(savedInstanceState)) {
-            viewModel.loadMovieDetails((arguments?.get(PARAM_MOVIE) as AthleteView).id)
+            viewModel.loadAthleteDetails((arguments?.get(PARAM_MOVIE) as AthleteView).id)
         } else {
             movieDetailsAnimator.scaleUpView(moviePlay)
             movieDetailsAnimator.cancelTransition(athletePicture)

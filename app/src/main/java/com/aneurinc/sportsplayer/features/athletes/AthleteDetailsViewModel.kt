@@ -11,7 +11,7 @@ class AthleteDetailsViewModel
 
     var athleteDetails: MutableLiveData<AthleteDetailsView> = MutableLiveData()
 
-    fun loadMovieDetails(movieId: Int) =
+    fun loadAthleteDetails(movieId: Int) =
         getAthleteDetails(GetAthleteDetails.Params(movieId)) { it.either(::handleFailure, ::handleMovieDetails) }
 
     private fun handleMovieDetails(athlete: AthleteDetails) {
