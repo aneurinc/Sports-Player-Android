@@ -11,4 +11,5 @@ class AthletesService
     private val moviesApi by lazy { retrofit.create(AthletesApi::class.java) }
 
     override fun athletes() = moviesApi.athletes()
+    override fun athleteDetails(movieId: Int) = moviesApi.athleteDetails(movieId)
 }

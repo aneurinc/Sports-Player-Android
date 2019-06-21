@@ -9,8 +9,10 @@ internal interface AthletesApi {
     companion object {
         private const val ATHLETE_ID = "athlete_id"
         private const val ATHLETES = "athletes"
+        private const val ATHLETE_DETAILS = "athlete/{$ATHLETE_ID}"
     }
 
     @GET(ATHLETES) fun athletes(): Call<List<AthleteEntity>>
+    @GET(ATHLETE_DETAILS) fun athleteDetails(@Path(ATHLETE_ID) movieId: Int): Call<AthleteDetailsEntity>
 
 }

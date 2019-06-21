@@ -11,6 +11,7 @@ import javax.inject.Inject
 interface AthletesRepository {
 
     fun athletes(): Either<Failure, List<Athlete>>
+    fun athleteDetails(id: Int): Either<Failure, AthleteDetails>
 
     class Network
     @Inject constructor(
@@ -21,6 +22,13 @@ interface AthletesRepository {
         override fun athletes(): Either<Failure, List<Athlete>> {
             return when (networkHandler.isConnected) {
                 true -> request(service.athletes(), { it.map { it.toAthlete() } }, emptyList())
+                false, null -> Left(NetworkConnection)
+            }
+        }
+
+        override fun athleteDetails(id: Int): Either<Failure, AthleteDetails> {
+            return when (networkHandler.isConnected) {
+                true -> request(service.athleteDetails(id), { it.toAthleteDetails() }, AthleteDetailsEntity.empty())
                 false, null -> Left(NetworkConnection)
             }
         }

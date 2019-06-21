@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import com.aneurinc.sportsplayer.features.login.Authenticator
 import com.aneurinc.sportsplayer.features.login.LoginActivity
+import com.aneurinc.sportsplayer.features.athletes.AthleteDetailsActivity
 import com.aneurinc.sportsplayer.features.athletes.AthleteView
 import com.aneurinc.sportsplayer.features.athletes.AthletesActivity
 import javax.inject.Inject
@@ -27,6 +28,14 @@ class Navigator @Inject constructor(private val authenticator: Authenticator) {
     private fun showLogin(context: Context) = context.startActivity(LoginActivity.callingIntent(context))
 
     fun showAthleteDetails(activity: FragmentActivity, movie: AthleteView, navigationExtras: Extras) {
+        val intent = AthleteDetailsActivity.callingIntent(activity, movie)
+        val sharedView = navigationExtras.transitionSharedElement as ImageView
+        val activityOptions = ActivityOptionsCompat
+            .makeSceneTransitionAnimation(activity, sharedView, sharedView.transitionName)
+        activity.startActivity(intent, activityOptions.toBundle())
+    }
+
+    fun showVideoPlayer(activity: FragmentActivity, videoUrl: String) {
 
     }
 
