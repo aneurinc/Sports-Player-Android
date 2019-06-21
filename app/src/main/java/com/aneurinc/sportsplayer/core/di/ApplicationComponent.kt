@@ -13,4 +13,5 @@ import javax.inject.Singleton
 interface ApplicationComponent {
     fun inject(application: App)
     fun inject(routeActivity: RouteActivity)
+    fun inject(moviesFragment: AthletesFragment)
 }

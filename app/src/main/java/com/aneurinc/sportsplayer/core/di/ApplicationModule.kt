@@ -4,6 +4,7 @@ import android.content.Context
 import com.aneurinc.sportsplayer.App
 import com.aneurinc.sportsplayer.BuildConfig
 import com.aneurinc.sportsplayer.core.platform.LoggingInterceptor
+import com.aneurinc.sportsplayer.features.athletes.AthletesRepository
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -37,4 +38,7 @@ class ApplicationModule(private val application: App) {
         return okHttpClientBuilder.build()
     }
 
+    @Provides
+    @Singleton
+    fun provideMoviesRepository(dataSource: AthletesRepository.Network): AthletesRepository = dataSource
 }
