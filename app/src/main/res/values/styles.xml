@@ -49,16 +49,78 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/colorTextSecondary</item>
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textSize">@dimen/movie_details_title</item>
+        <item name="android:textSize">@dimen/athlete_details_title</item>
         <item name="android:paddingRight">20dp</item>
         <item name="android:paddingLeft">20dp</item>
     </style>
 
     <style name="AthleteDetailsText" parent="AthleteDetailsTitle">
         <item name="android:textColor">@color/colorTextPrimary</item>
-        <item name="android:textSize">@dimen/movie_details_text</item>
+        <item name="android:textSize">@dimen/athlete_details_text</item>
         <item name="android:paddingBottom">25dp</item>
         <item name="android:freezesText">true</item>
+    </style>
+
+    // Exomedia
+
+    <style name="ExoMediaButton">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">@dimen/exo_media_button_width</item>
+        <item name="android:layout_height">@dimen/exo_media_button_height</item>
+    </style>
+
+    <style name="ExoMediaButton.Previous">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/ic_previous</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:contentDescription">@string/exo_controls_previous_description</item>
+    </style>
+
+    <style name="ExoMediaButton.Next">
+        <item name="android:src">@drawable/ic_next</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:contentDescription">@string/exo_controls_next_description</item>
+    </style>
+
+    <style name="ExoMediaButton.FastForward">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/ic_forward_10</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:contentDescription">@string/exo_controls_fastforward_description</item>
+    </style>
+
+    <style name="ExoMediaButton.Rewind">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/ic_replay_10</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:contentDescription">@string/exo_controls_rewind_description</item>
+    </style>
+
+    <style name="ExoMediaButton.Play">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/ic_play_video</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:contentDescription">@string/exo_controls_play_description</item>
+    </style>
+
+    <style name="ExoMediaButton.Pause">
+        <item name="android:src">@drawable/ic_pause</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:contentDescription">@string/exo_controls_pause_description</item>
     </style>
 
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.aneurinc.sportsplayer">
+          package="com.nsc9012.sportsplayer">
 
     <!--Permissions-->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -9,14 +9,14 @@
 
     <application
             android:allowBackup="true"
-            android:name="com.aneurinc.sportsplayer.App"
+            android:name="com.nsc9012.sportsplayer.App"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.aneurinc.sportsplayer.core.navigation.RouteActivity"
+        <activity android:name="com.nsc9012.sportsplayer.core.navigation.RouteActivity"
                   android:noHistory="true"
                   android:theme="@style/AppTheme.Translucent">
             <intent-filter>
@@ -26,23 +26,23 @@
         </activity>
 
         <activity
-                android:name="com.aneurinc.sportsplayer.features.athletes.AthletesActivity"
+                android:name="com.nsc9012.sportsplayer.features.athletes.AthletesActivity"
                 android:label="@string/athletes_screen_title">
         </activity>
 
         <activity
-                android:name="com.aneurinc.sportsplayer.features.athletes.AthleteDetailsActivity"
+                android:name="com.nsc9012.sportsplayer.features.athletes.AthleteDetailsActivity"
                 android:label="@string/athletes_screen_title"
                 android:theme="@style/AppTheme.Translucent">
         </activity>
 
         <activity
-                android:name="com.aneurinc.sportsplayer.features.athletes.AthleteVideoPlayerActivity"
+                android:name="com.nsc9012.sportsplayer.features.athletes.AthleteVideoPlayerActivity"
                 android:configChanges="orientation|screenSize">
         </activity>
 
         <activity
-                android:name="com.aneurinc.sportsplayer.features.login.LoginActivity"
+                android:name="com.nsc9012.sportsplayer.features.login.LoginActivity"
                 android:label="@string/login_screen_title">
         </activity>
 

@@ -5,7 +5,7 @@
     <string name="failure_network_connection">No Network Connection.</string>
     <string name="failure_server_error">Server Error</string>
     <string name="failure_athletes_list_unavailable">Athletes Unavailable.</string>
-    <string name="failure_movie_non_existent">Athlete Not Existent.</string>
+    <string name="failure_athlete_non_existent">Athlete Not Existent.</string>
     <string name="athletes_screen_title">Athletes</string>
     <string name="athletes_details_screen_title">Athlete Details</string>
     <string name="login_screen_title">Login</string>
